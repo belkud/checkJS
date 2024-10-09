@@ -63,10 +63,7 @@ console.log(5*'df');
 console.log(typeof(5+'df'));
 
 
-
-function readNumber(){
-  
-}
+ 
 
 
 let acc=0
@@ -97,3 +94,46 @@ num.forEach(el=>
 
 console.log(acc/1000_000);
 console.log(acc.toFixed(1));
+
+
+
+
+// 1. Создайте скрипт, который запрашивает ввод двух чисел 
+// (используйте prompt) и после показывает их сумму.
+
+// let x = Number(prompt('введите число 1'))
+// let y = Number(prompt('введите число 2'))
+// console.log(x+y);
+
+
+
+// 2. Как правильно округлить 6.35? на 6.4
+
+// let x = 6.35
+// console.log(Math.round(x*10)/10);
+// console.log(Math.round(x));
+
+
+
+// 3. Создайте функцию readNumber, которая будет запрашивать ввод 
+// числового значения до тех пор, пока посетитель его не введёт.
+
+// Функция должна возвращать числовое значение.
+
+// Также надо разрешить пользователю остановить процесс ввода, 
+// отправив пустую строку или нажав «Отмена». В этом случае 
+// функция должна вернуть null.
+
+function readNumber() {
+  let x = +prompt('введите число')
+  if(x==0){
+  console.log('Процесс ввода остановлен');
+  } else if (x!=String) {
+    console.log(x);
+  } else{
+    readNumber()
+  }
+
+}
+
+readNumber()
