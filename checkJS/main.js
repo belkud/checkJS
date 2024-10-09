@@ -51,11 +51,7 @@ if (e>5) {
   console.log('успешно');  
 }
 
-
-
-
-
-
+ 
 
 console.log(null==null);
 console.log(5*'df');
@@ -97,6 +93,10 @@ console.log(typeof(5+'df'));
 
 
 
+
+
+
+// ЧИСЛА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //! 1. Создайте скрипт, который запрашивает ввод двух чисел 
 // (используйте prompt) и после показывает их сумму.
@@ -171,8 +171,57 @@ console.log( randomInteger(1, 3) );
 
 
 
-
+// СТРОКИ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 let str = 'evening'
+console.log(str[1]);
+
+for (let i = 0; i < str.length; i++) {
+  console.log(str[i]);
+}
+
+let str2 = 'Hi'
+str2 = str2[0] + 'I' +'N'
+console.log(str2);
+
+
+let day = 'Morning'
+console.log( day.toLowerCase());
+console.log( day.toUpperCase());
+
+console.log(day[5].toUpperCase());
+
+
+let str4 = 'rr';
+let str5 = str4[1].toUpperCase()
+console.log( str5 );
+
+
+
+
+
+
+
+
+// ОБЪЕКТЫ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+// 1. Функция для вывода на экран информации об автомобиле.
+const car = {
+  producer: 'Kia',
+  model: 'Rio',
+  year:2019,
+  averageSpeed: 10,
+  distance: 80
+}
+console.log(car);
+
+
+function showCarInfo(car) {
+  console.log(car)
+}
+showCarInfo(car)
 
 
 
